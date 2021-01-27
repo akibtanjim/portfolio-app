@@ -8,10 +8,10 @@
 [react icons] :https://react-icons.github.io/react-icons/
 
 ```javascript
-import { FaHome } from "react-icons/fa"
+import { FaHome } from "react-icons/fa";
 const Component = () => {
-  return <FaHome className="icon"></FaHome>
-}
+  return <FaHome className="icon"></FaHome>;
+};
 ```
 
 5. Use constants to avoid repetition.
@@ -20,6 +20,8 @@ const Component = () => {
    [strapi backend]:https://github.com/john-smilga/strapi-gatsby-porfolio-2020-api
 
 7. Make sure such content-types exist in your Strapi application. Or replace/delete them in gatsby-config.js
+
+`https://github.com/john-smilga/gatsby-strapi-portfolio-site-2020`
 
 ```javascript
 {
