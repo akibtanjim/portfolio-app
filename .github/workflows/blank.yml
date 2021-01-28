@@ -2,14 +2,16 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+  schedule:
+    - cron: "*/15 * * * *"
 jobs:
   build:
     name: Build Gatsby Site
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Build Gatsby Site
-      uses: jzweifel/gatsby-cli-github-action@master
-      with:
-        gatsby-arg: build
+      - uses: actions/checkout@master
+      - name: Build Gatsby Site
+        uses: jzweifel/gatsby-cli-github-action@master
+        with:
+          gatsby-arg: build
